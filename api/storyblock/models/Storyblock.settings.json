@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "storyblock",
+  "info": {
+    "name": "storyblock",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "storyBody": {
+      "default": "",
+      "type": "text"
+    },
+    "order": {
+      "default": 0,
+      "type": "integer"
+    },
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "storydefinition": {
+      "model": "storydefinition",
+      "via": "storyblocks"
+    },
+    "likes": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

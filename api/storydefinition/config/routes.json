@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/storydefinition",
+      "handler": "Storydefinition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storydefinition/count",
+      "handler": "Storydefinition.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storydefinition/:_id",
+      "handler": "Storydefinition.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/storydefinition",
+      "handler": "Storydefinition.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/storydefinition/:_id",
+      "handler": "Storydefinition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/storydefinition/:_id",
+      "handler": "Storydefinition.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

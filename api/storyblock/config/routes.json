@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/storyblock",
+      "handler": "Storyblock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storyblock/count",
+      "handler": "Storyblock.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storyblock/:_id",
+      "handler": "Storyblock.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/storyblock",
+      "handler": "Storyblock.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/storyblock/:_id",
+      "handler": "Storyblock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/storyblock/:_id",
+      "handler": "Storyblock.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
