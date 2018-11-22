@@ -27,8 +27,10 @@
       "via": "storydefinition"
     },
     "likes": {
-      "default": 0,
-      "type": "integer"
+      "collection": "user",
+      "via": "liked_stories",
+      "dominant": true,
+      "plugin": "users-permissions"
     }
   }
 }

@@ -25,6 +25,8 @@ module.exports = {
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias)
       .join(' ');
+	  
+
 
     return Storydefinition
       .find()
@@ -48,6 +50,8 @@ module.exports = {
       .map(ast => ast.alias)
       .join(' ');
 
+	  	  strapi.log.info(populate.title)
+	  
     return Storydefinition
       .findOne(_.pick(params, _.keys(Storydefinition.schema.paths)))
       .populate(populate);

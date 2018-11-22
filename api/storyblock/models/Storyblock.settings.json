@@ -24,10 +24,6 @@
     "storydefinition": {
       "model": "storydefinition",
       "via": "storyblocks"
-    },
-    "likes": {
-      "default": 0,
-      "type": "integer"
     }
   }
 }
